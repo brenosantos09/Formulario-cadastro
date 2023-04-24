@@ -7,7 +7,7 @@
 }
 
 body {
-
+ font-family: 'Roboto Slab', serif;
 }
 
 .container {
@@ -20,16 +20,35 @@ body {
   padding: 3rem;
   font-weight: bold;
   font-size: 1.15rem;
+  letter-spacing: 2px;
 }
 
 .sidebar {
   background-image: url('images/background-image.jpg');
-  width: 60vw;
+  width: 95vw;
   min-height: 100vh;
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.sidebar__logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar__title{
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: white;
+}
+.sidebar__logo img{
+  width: 10rem;
+}
 
 
 
