@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+}
+
+.container {
+  display: flex;
+}
+
+.form__info {
+  background-color: black;
+  color: white;
+  padding: 3rem;
+  font-weight: bold;
+  font-size: 1.15rem;
+}
+
+.sidebar {
+  background-image: url('images/background-image.jpg');
+  width: 60vw;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+.form__signup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  box-shadow: 0 5px 15px 0 rgb(146, 136, 136);
+}
+
+.form__input-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form__inputs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin-bottom: 3rem;
+  height: 40px;
+}
+
+
+
+.form__label {
+  font-size: 1.25rem;
+  color: black
+  text-transform: uppercase;
+}
+
+
+.form__input {
+  padding: 0.5rem 1rem;
+  width: 95%;
+  outline: none;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+}
+
+.form__input:focus{
+  border: 1px solid blue;
+  box-shadow: 0 5px 10px 0 rgb(163, 153, 153);
+}
+
+.form__button{
+  width: 100%;
+}
+.form__btn{
+  width: 8rem;
+  padding: .55rem 1rem;
+  border: 3px solid rgb(87, 82, 82);
+  background-color: yellow;
+  font-size: 1.10rem;
+  font-weight: 700;
+  border-radius: 1rem;
+  cursor: pointer;
+  
+}
+
+/*---form validation*/
+.form__inputs.success input{
+  border-color: green;
+}
+
+.form__inputs.error input{
+  border-color: red;
+}
+
+.form__inputs .error{
+  font-size: 1;
+  color: red;
+}
